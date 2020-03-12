@@ -1,0 +1,26 @@
+name: bookapp
+description: A new Flutter project.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^0.1.2
+  flutter_screenutil: 
+  flutter_svg: ^0.17.1
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - "assets/logo.svg"
+    - "assets/books/jungle_book.jpg"
+    - "assets/books/king_kong.jpg"
