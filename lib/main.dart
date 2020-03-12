@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        scaffoldBackgroundColor: Color.fromARGB(100, 16, 11, 32)
       ),
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
@@ -34,8 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     ScreenUtil.init(context, width: 750, height: 1334);
 
-    return Scaffold(
-      backgroundColor: Color(0x100B20),
+    return Scaffold(      
       body: Column(
         children: <Widget>[
           SizedBox(
@@ -60,12 +59,12 @@ class _MyHomePageState extends State<MyHomePage> {
               ],
             )
           ),
-          Expanded( // Best seller carrusel
-            flex: 3,
+          Expanded( // Best seller
+            flex: 4,
             child: BestSellerList()
           ),
           Expanded(
-            flex: 6,
+            flex: 5,
             child: Column(children: <Widget>[
               Expanded(
                 flex: 1,
